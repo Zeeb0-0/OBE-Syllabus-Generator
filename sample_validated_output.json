@@ -1,0 +1,108 @@
+{
+  "course": {
+    "course_code": "SAMPLE-CS301",
+    "course_title": "Artificial Intelligence (SAMPLE DATA)",
+    "description": "SAMPLE DATA. An introduction to the principles of artificial intelligence, covering intelligent agents, search, knowledge representation, reasoning under uncertainty, machine learning, and the ethical use of AI systems.",
+    "units": 3,
+    "prerequisite": "Data Structures and Algorithms"
+  },
+  "course_outcomes": [
+    {"number": 1, "domain": "K", "text": "Describe the foundational concepts, history, and applications of artificial intelligence."},
+    {"number": 2, "domain": "S", "text": "Apply search and constraint satisfaction techniques to solve well-defined computational problems."},
+    {"number": 3, "domain": "S", "text": "Construct logical and probabilistic representations of knowledge for reasoning under uncertainty."},
+    {"number": 4, "domain": "S", "text": "Implement basic machine learning models and evaluate their performance using standard metrics."},
+    {"number": 5, "domain": "A", "text": "Justify ethical and responsible design decisions in the development of AI systems."}
+  ],
+  "weekly_schedule": [
+    {"week": 1, "topic": "Introduction to AI and Intelligent Agents", "description": "Overview of the history, scope, and applications of AI, and the agent-environment model.",
+     "lesson_outcomes": [
+       {"domain": "K", "text": "Describe the history, goals, and major application areas of artificial intelligence."},
+       {"domain": "S", "text": "Classify real-world agents by their environment properties and agent architecture."},
+       {"domain": "A", "text": "Discuss the societal role of AI with respect for differing viewpoints."}]},
+    {"week": 2, "topic": "Problem Solving and State-Space Search", "description": "Formulating problems as states, actions, goals, and path costs.",
+     "lesson_outcomes": [
+       {"domain": "K", "text": "Define the components of a well-formed search problem."},
+       {"domain": "S", "text": "Formulate a given puzzle as a state-space search problem."},
+       {"domain": "A", "text": "Demonstrate persistence in decomposing ambiguous problems into precise formal models."}]},
+    {"week": 3, "topic": "Uninformed Search Strategies", "description": "Breadth-first, depth-first, uniform-cost, and iterative deepening search.",
+     "lesson_outcomes": [
+       {"domain": "K", "text": "Compare breadth-first and depth-first search in terms of completeness and complexity."},
+       {"domain": "S", "text": "Implement breadth-first and depth-first search in Python for a maze problem."},
+       {"domain": "A", "text": "Practice writing clean, documented code that peers can read and reproduce."}]},
+    {"week": 4, "topic": "Informed Search and Heuristics", "description": "Greedy best-first search and A* search with admissible heuristics.",
+     "lesson_outcomes": [
+       {"domain": "K", "text": "Explain how admissible and consistent heuristics guarantee optimal A* search."},
+       {"domain": "S", "text": "Implement A* search with a heuristic for a route-finding problem."},
+       {"domain": "A", "text": "Justify heuristic design choices using evidence from experiments."}]},
+    {"week": 5, "topic": "Local Search and Optimization", "description": "Hill climbing, simulated annealing, and genetic algorithms.",
+     "lesson_outcomes": [
+       {"domain": "K", "text": "Distinguish local search methods from systematic search methods."},
+       {"domain": "S", "text": "Apply hill climbing and simulated annealing to an optimization problem."},
+       {"domain": "A", "text": "Demonstrate willingness to revise solutions after analyzing failed runs."}]},
+    {"week": 6, "topic": "Adversarial Search and Games", "description": "Minimax and alpha-beta pruning for two-player games.",
+     "lesson_outcomes": [
+       {"domain": "K", "text": "Explain how minimax and alpha-beta pruning select moves in two-player games."},
+       {"domain": "S", "text": "Implement a minimax player with alpha-beta pruning for tic-tac-toe."},
+       {"domain": "A", "text": "Collaborate with teammates to test and improve game-playing agents."}]},
+    {"week": 7, "topic": "Constraint Satisfaction Problems", "description": "Modeling problems with variables, domains, and constraints; backtracking and constraint propagation.",
+     "lesson_outcomes": [
+       {"domain": "K", "text": "Identify the variables, domains, and constraints in a given problem."},
+       {"domain": "S", "text": "Solve a scheduling problem using backtracking with forward checking."},
+       {"domain": "A", "text": "Demonstrate accuracy and attention to detail when specifying constraints."}]},
+    {"week": 8, "topic": "Knowledge Representation and Propositional Logic", "description": "Propositional syntax, semantics, and inference.",
+     "lesson_outcomes": [
+       {"domain": "K", "text": "Describe the syntax and semantics of propositional logic."},
+       {"domain": "S", "text": "Translate English statements into propositional logic sentences."},
+       {"domain": "A", "text": "Defend the need for unambiguous statements when specifying knowledge."}]},
+    {"week": 9, "topic": "Midterm Examination and Review", "description": "Review of Weeks 1 to 8 and midterm assessment.",
+     "lesson_outcomes": [
+       {"domain": "K", "text": "Recall the key search, game, and logic concepts covered in Weeks 1 to 8."},
+       {"domain": "S", "text": "Solve search and constraint problems under timed conditions."},
+       {"domain": "A", "text": "Demonstrate academic integrity during the examination."}]},
+    {"week": 10, "topic": "First-Order Logic and Inference", "description": "Quantifiers, unification, and resolution-based inference.",
+     "lesson_outcomes": [
+       {"domain": "K", "text": "Explain quantifiers, unification, and resolution in first-order logic."},
+       {"domain": "S", "text": "Derive conclusions from a knowledge base using resolution."},
+       {"domain": "A", "text": "Show patience and rigor when verifying multi-step logical proofs."}]},
+    {"week": 11, "topic": "Uncertainty and Probabilistic Reasoning", "description": "Probability, conditional independence, and Bayes' rule.",
+     "lesson_outcomes": [
+       {"domain": "K", "text": "State Bayes' rule and explain its role in reasoning under uncertainty."},
+       {"domain": "S", "text": "Compute posterior probabilities for diagnostic scenarios using Bayes' rule."},
+       {"domain": "A", "text": "Acknowledge uncertainty honestly when reporting AI-based conclusions."}]},
+    {"week": 12, "topic": "Bayesian Networks", "description": "Structure, inference, and applications of Bayesian networks.",
+     "lesson_outcomes": [
+       {"domain": "K", "text": "Describe how a Bayesian network encodes conditional dependencies."},
+       {"domain": "S", "text": "Construct a small Bayesian network and query it for probabilities."},
+       {"domain": "A", "text": "Justify modeling assumptions with reference to available data."}]},
+    {"week": 13, "topic": "Introduction to Machine Learning", "description": "Learning paradigms, training and testing data, and overfitting.",
+     "lesson_outcomes": [
+       {"domain": "K", "text": "Differentiate supervised, unsupervised, and reinforcement learning."},
+       {"domain": "S", "text": "Split a dataset into training and test sets and evaluate a baseline model."},
+       {"domain": "A", "text": "Demonstrate responsible handling of datasets, including proper attribution."}]},
+    {"week": 14, "topic": "Supervised Learning: Classification", "description": "Decision trees, k-nearest neighbors, and evaluation metrics.",
+     "lesson_outcomes": [
+       {"domain": "K", "text": "Explain how decision trees and k-nearest neighbors classify new examples."},
+       {"domain": "S", "text": "Train a classifier and compute accuracy, precision, and recall."},
+       {"domain": "A", "text": "Defend model selection decisions using measured results."}]},
+    {"week": 15, "topic": "Neural Networks Fundamentals", "description": "Perceptrons, activation functions, and backpropagation.",
+     "lesson_outcomes": [
+       {"domain": "K", "text": "Describe the structure of a feedforward neural network and the role of backpropagation."},
+       {"domain": "S", "text": "Train a simple neural network on a small dataset using a library."},
+       {"domain": "A", "text": "Practice systematic experimentation by recording and comparing training runs."}]},
+    {"week": 16, "topic": "Natural Language Processing and Applications", "description": "Text preprocessing, representation, and basic language tasks.",
+     "lesson_outcomes": [
+       {"domain": "K", "text": "Outline the main stages of a basic natural language processing pipeline."},
+       {"domain": "S", "text": "Build a text classifier using tokenization and a bag-of-words representation."},
+       {"domain": "A", "text": "Demonstrate sensitivity to linguistic and cultural diversity when selecting text data."}]},
+    {"week": 17, "topic": "Ethics, Bias, and Responsible AI", "description": "Fairness, transparency, accountability, privacy, and AI governance.",
+     "lesson_outcomes": [
+       {"domain": "K", "text": "Identify sources of bias, privacy risk, and accountability gaps in AI systems."},
+       {"domain": "S", "text": "Evaluate a case study of an AI system against fairness and transparency criteria."},
+       {"domain": "A", "text": "Advocate responsible AI practices in team discussions and project decisions."}]},
+    {"week": 18, "topic": "Final Project Presentation and Examination", "description": "Project demonstrations and final assessment.",
+     "lesson_outcomes": [
+       {"domain": "K", "text": "Summarize the AI techniques applied in the final project."},
+       {"domain": "S", "text": "Demonstrate a working AI solution to a defined problem."},
+       {"domain": "A", "text": "Accept feedback professionally and reflect on areas for improvement."}]}
+  ]
+}

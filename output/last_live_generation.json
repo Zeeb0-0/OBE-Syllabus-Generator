@@ -1,0 +1,385 @@
+{
+  "course_outcomes": [
+    {
+      "number": 1,
+      "domain": "K",
+      "text": "define the purpose of object-oriented programming"
+    },
+    {
+      "number": 2,
+      "domain": "K",
+      "text": "explain the concept of encapsulation in object-oriented programming"
+    },
+    {
+      "number": 3,
+      "domain": "K",
+      "text": "compare and contrast different data structures used in programming"
+    },
+    {
+      "number": 4,
+      "domain": "K",
+      "text": "identify the key principles of software engineering"
+    },
+    {
+      "number": 5,
+      "domain": "S",
+      "text": "apply object-oriented design patterns to solve problems"
+    },
+    {
+      "number": 6,
+      "domain": "S",
+      "text": "implement a basic data structure in a programming language"
+    }
+  ],
+  "weekly_schedule": [
+    {
+      "week": 1,
+      "topic": "Introduction to Programming",
+      "description": "Overview of programming concepts and basic syntax",
+      "lesson_outcomes": [
+        {
+          "domain": "K",
+          "text": "define the purpose of object-oriented programming"
+        },
+        {
+          "domain": "S",
+          "text": "apply basic programming constructs to solve problems"
+        },
+        {
+          "domain": "A",
+          "text": "demonstrate professionalism and responsibility in coding"
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "topic": "Variables and Data Types",
+      "description": "Understanding and using variables and data types in programming",
+      "lesson_outcomes": [
+        {
+          "domain": "K",
+          "text": "explain the concept of data types in programming"
+        },
+        {
+          "domain": "S",
+          "text": "apply variable assignment and data type conversions"
+        },
+        {
+          "domain": "A",
+          "text": "collaborate effectively in a team setting"
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "topic": "Control Structures",
+      "description": "Introduction to loops, conditionals, and decision-making in programming",
+      "lesson_outcomes": [
+        {
+          "domain": "K",
+          "text": "compare and contrast different control structures"
+        },
+        {
+          "domain": "S",
+          "text": "implement loops and conditionals to control program flow"
+        },
+        {
+          "domain": "A",
+          "text": "justify the use of control structures in problem-solving"
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "topic": "Functions and Modules",
+      "description": "Creating reusable functions and modules in programming",
+      "lesson_outcomes": [
+        {
+          "domain": "K",
+          "text": "define the purpose of functions in programming"
+        },
+        {
+          "domain": "S",
+          "text": "implement a function to solve a specific problem"
+        },
+        {
+          "domain": "A",
+          "text": "evaluate the effectiveness of a function in a program"
+        }
+      ]
+    },
+    {
+      "week": 5,
+      "topic": "Arrays and Lists",
+      "description": "Working with arrays and lists in programming",
+      "lesson_outcomes": [
+        {
+          "domain": "K",
+          "text": "identify the key principles of arrays and lists"
+        },
+        {
+          "domain": "S",
+          "text": "implement arrays and lists to store and manipulate data"
+        },
+        {
+          "domain": "A",
+          "text": "design a program that utilizes arrays and lists"
+        }
+      ]
+    },
+    {
+      "week": 6,
+      "topic": "Classes and Objects",
+      "description": "Understanding classes and objects in object-oriented programming",
+      "lesson_outcomes": [
+        {
+          "domain": "K",
+          "text": "define the purpose of classes and objects in programming"
+        },
+        {
+          "domain": "S",
+          "text": "implement a class to encapsulate data and behavior"
+        },
+        {
+          "domain": "A",
+          "text": "justify the use of classes and objects in problem-solving"
+        }
+      ]
+    },
+    {
+      "week": 7,
+      "topic": "Inheritance and Polymorphism",
+      "description": "Exploring inheritance and polymorphism in object-oriented programming",
+      "lesson_outcomes": [
+        {
+          "domain": "K",
+          "text": "compare and contrast inheritance and polymorphism"
+        },
+        {
+          "domain": "S",
+          "text": "implement inheritance and polymorphism in a program"
+        },
+        {
+          "domain": "A",
+          "text": "evaluate the impact of inheritance and polymorphism on program design"
+        }
+      ]
+    },
+    {
+      "week": 8,
+      "topic": "Exception Handling",
+      "description": "Handling errors and exceptions in programming",
+      "lesson_outcomes": [
+        {
+          "domain": "K",
+          "text": "identify common types of exceptions in programming"
+        },
+        {
+          "domain": "S",
+          "text": "implement exception handling to manage errors"
+        },
+        {
+          "domain": "A",
+          "text": "justify the use of exception handling in program design"
+        }
+      ]
+    },
+    {
+      "week": 9,
+      "topic": "File I/O",
+      "description": "Reading from and writing to files in programming",
+      "lesson_outcomes": [
+        {
+          "domain": "K",
+          "text": "define the purpose of file I/O in programming"
+        },
+        {
+          "domain": "S",
+          "text": "implement file I/O operations in a program"
+        },
+        {
+          "domain": "A",
+          "text": "evaluate the effectiveness of file I/O in a program"
+        }
+      ]
+    },
+    {
+      "week": 10,
+      "topic": "Debugging and Testing",
+      "description": "Techniques for debugging and testing programs",
+      "lesson_outcomes": [
+        {
+          "domain": "K",
+          "text": "identify common debugging techniques in programming"
+        },
+        {
+          "domain": "S",
+          "text": "implement debugging and testing strategies in a program"
+        },
+        {
+          "domain": "A",
+          "text": "evaluate the effectiveness of debugging and testing in a program"
+        }
+      ]
+    },
+    {
+      "week": 11,
+      "topic": "Version Control",
+      "description": "Introduction to version control systems like Git",
+      "lesson_outcomes": [
+        {
+          "domain": "K",
+          "text": "define the purpose of version control in programming"
+        },
+        {
+          "domain": "S",
+          "text": "implement version control operations in a program"
+        },
+        {
+          "domain": "A",
+          "text": "evaluate the effectiveness of version control in a program"
+        }
+      ]
+    },
+    {
+      "week": 12,
+      "topic": "Web Development Basics",
+      "description": "Introduction to web development using HTML and CSS",
+      "lesson_outcomes": [
+        {
+          "domain": "K",
+          "text": "define the purpose of HTML and CSS in web development"
+        },
+        {
+          "domain": "S",
+          "text": "implement HTML and CSS to structure and style web pages"
+        },
+        {
+          "domain": "A",
+          "text": "evaluate the effectiveness of HTML and CSS in web development"
+        }
+      ]
+    },
+    {
+      "week": 13,
+      "topic": "Database Basics",
+      "description": "Introduction to relational databases and SQL",
+      "lesson_outcomes": [
+        {
+          "domain": "K",
+          "text": "define the purpose of relational databases in web development"
+        },
+        {
+          "domain": "S",
+          "text": "implement SQL queries to manage database operations"
+        },
+        {
+          "domain": "A",
+          "text": "evaluate the effectiveness of SQL in database operations"
+        }
+      ]
+    },
+    {
+      "week": 14,
+      "topic": "Security Basics",
+      "description": "Basics of securing web applications and databases",
+      "lesson_outcomes": [
+        {
+          "domain": "K",
+          "text": "identify common security threats in web development"
+        },
+        {
+          "domain": "S",
+          "text": "implement security measures to protect web applications and databases"
+        },
+        {
+          "domain": "A",
+          "text": "evaluate the effectiveness of security measures in web development"
+        }
+      ]
+    },
+    {
+      "week": 15,
+      "topic": "APIs and Web Services",
+      "description": "Introduction to APIs and web services",
+      "lesson_outcomes": [
+        {
+          "domain": "K",
+          "text": "define the purpose of APIs and web services in web development"
+        },
+        {
+          "domain": "S",
+          "text": "implement APIs and web services to integrate web applications"
+        },
+        {
+          "domain": "A",
+          "text": "evaluate the effectiveness of APIs and web services in web development"
+        }
+      ]
+    },
+    {
+      "week": 16,
+      "topic": "Project Management",
+      "description": "Introduction to project management tools and practices",
+      "lesson_outcomes": [
+        {
+          "domain": "K",
+          "text": "define the purpose of project management in web development"
+        },
+        {
+          "domain": "S",
+          "text": "implement project management practices to manage a web development project"
+        },
+        {
+          "domain": "A",
+          "text": "evaluate the effectiveness of project management practices in web development"
+        }
+      ]
+    },
+    {
+      "week": 17,
+      "topic": "Final Project",
+      "description": "Implementing a full web application from start to finish",
+      "lesson_outcomes": [
+        {
+          "domain": "K",
+          "text": "define the purpose of a full web application in web development"
+        },
+        {
+          "domain": "S",
+          "text": "implement a full web application from start to finish"
+        },
+        {
+          "domain": "A",
+          "text": "evaluate the effectiveness of the full web application in web development"
+        }
+      ]
+    },
+    {
+      "week": 18,
+      "topic": "Reflection and Future Directions",
+      "description": "Reflecting on the course and planning for future learning",
+      "lesson_outcomes": [
+        {
+          "domain": "K",
+          "text": "reflect on the key concepts and skills learned in the course"
+        },
+        {
+          "domain": "S",
+          "text": "plan for future learning and professional development"
+        },
+        {
+          "domain": "A",
+          "text": "evaluate the effectiveness of the course in achieving learning outcomes"
+        }
+      ]
+    }
+  ],
+  "course": {
+    "course_code": "67",
+    "course_title": "TITE",
+    "description": "FGFDGFFGFDGFDGFDGFDGFDGFDGFDGFD",
+    "units": 3,
+    "prerequisite": "None"
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "course": {
+    "course_code": "SAMPLE-CS201",
+    "course_title": "Data Structures and Algorithms (SAMPLE DATA)",
+    "description": "SAMPLE DATA. A study of fundamental data structures and algorithms, including arrays, linked lists, stacks, queues, trees, hash tables, graphs, sorting, searching, and algorithm analysis.",
+    "units": 3,
+    "prerequisite": "Computer Programming 2 (SAMPLE)"
+  },
+  "course_outcomes": [
+    {"number": 1, "domain": "K", "text": "Explain the properties, operations, and trade-offs of fundamental data structures."},
+    {"number": 2, "domain": "K", "text": "Analyze the time and space complexity of algorithms using asymptotic notation."},
+    {"number": 3, "domain": "S", "text": "Implement linear and non-linear data structures in a programming language."},
+    {"number": 4, "domain": "S", "text": "Apply sorting, searching, and graph algorithms to solve computational problems."},
+    {"number": 5, "domain": "A", "text": "Demonstrate disciplined, collaborative, and ethical practices in software development."}
+  ],
+  "weekly_schedule": [
+    {"week": 1, "topic": "Course Overview and Algorithm Analysis Basics", "description": "Course orientation, abstract data types, and the idea of measuring algorithm efficiency.",
+     "lesson_outcomes": [
+       {"domain": "K", "text": "Define abstract data type and explain why data structure choice affects efficiency."},
+       {"domain": "S", "text": "Measure the running time of a simple algorithm for increasing input sizes."},
+       {"domain": "A", "text": "Demonstrate commitment to course policies on academic integrity and collaboration."}]},
+    {"week": 2, "topic": "Asymptotic Notation and Complexity Analysis", "description": "Big-O, Omega, and Theta notation; analyzing loops and recursion.",
+     "lesson_outcomes": [
+       {"domain": "K", "text": "Explain Big-O, Omega, and Theta notation."},
+       {"domain": "S", "text": "Determine the time complexity of iterative code fragments."},
+       {"domain": "A", "text": "Justify complexity claims with clear reasoning rather than guesswork."}]},
+    {"week": 3, "topic": "Arrays and Strings", "description": "Static and dynamic arrays, string operations, and common array algorithms.",
+     "lesson_outcomes": [
+       {"domain": "K", "text": "Describe the memory layout and access cost of arrays."},
+       {"domain": "S", "text": "Implement a dynamic array that resizes automatically."},
+       {"domain": "A", "text": "Practice careful testing of boundary cases such as empty and full arrays."}]},
+    {"week": 4, "topic": "Linked Lists", "description": "Singly, doubly, and circular linked lists with insertion and deletion.",
+     "lesson_outcomes": [
+       {"domain": "K", "text": "Compare linked lists with arrays in terms of insertion, deletion, and access cost."},
+       {"domain": "S", "text": "Implement a singly linked list with insert, delete, and search operations."},
+       {"domain": "A", "text": "Demonstrate diligence in debugging pointer and reference errors."}]},
+    {"week": 5, "topic": "Stacks", "description": "The stack ADT and its applications such as expression evaluation.",
+     "lesson_outcomes": [
+       {"domain": "K", "text": "Explain the last-in, first-out behavior of the stack ADT."},
+       {"domain": "S", "text": "Apply a stack to evaluate postfix expressions and check balanced parentheses."},
+       {"domain": "A", "text": "Collaborate with a partner during pair-programming exercises."}]},
+    {"week": 6, "topic": "Queues and Deques", "description": "Queue, circular queue, deque, and priority queue basics.",
+     "lesson_outcomes": [
+       {"domain": "K", "text": "Differentiate queues, deques, and priority queues by their operations."},
+       {"domain": "S", "text": "Implement a circular queue using an array."},
+       {"domain": "A", "text": "Reflect on design trade-offs when selecting a linear data structure."}]},
+    {"week": 7, "topic": "Recursion", "description": "Recursive problem solving, base cases, and call stack behavior.",
+     "lesson_outcomes": [
+       {"domain": "K", "text": "Describe the roles of the base case and recursive case in a recursive function."},
+       {"domain": "S", "text": "Write recursive solutions for factorial, Fibonacci, and binary search."},
+       {"domain": "A", "text": "Show perseverance in tracing recursive calls to locate logic errors."}]},
+    {"week": 8, "topic": "Sorting I: Elementary Sorts", "description": "Bubble, selection, and insertion sort.",
+     "lesson_outcomes": [
+       {"domain": "K", "text": "Explain how bubble, selection, and insertion sort order a list."},
+       {"domain": "S", "text": "Implement insertion sort and count its comparisons on sample inputs."},
+       {"domain": "A", "text": "Practice honest reporting of experimental results, including unfavorable ones."}]},
+    {"week": 9, "topic": "Midterm Examination and Review", "description": "Review of Weeks 1 to 8 and midterm assessment.",
+     "lesson_outcomes": [
+       {"domain": "K", "text": "Recall the properties of arrays, linked lists, stacks, and queues."},
+       {"domain": "S", "text": "Solve complexity analysis and data structure problems under timed conditions."},
+       {"domain": "A", "text": "Demonstrate academic integrity during the examination."}]},
+    {"week": 10, "topic": "Sorting II: Merge Sort and Quick Sort", "description": "Divide-and-conquer sorting with analysis of best, average, and worst cases.",
+     "lesson_outcomes": [
+       {"domain": "K", "text": "Explain the divide-and-conquer strategy used by merge sort and quick sort."},
+       {"domain": "S", "text": "Implement merge sort and quick sort and compare their running times."},
+       {"domain": "A", "text": "Defend algorithm choices using complexity analysis and measured data."}]},
+    {"week": 11, "topic": "Searching and Hash Tables", "description": "Linear and binary search, hash functions, and collision resolution.",
+     "lesson_outcomes": [
+       {"domain": "K", "text": "Describe how hash functions and collision resolution strategies work."},
+       {"domain": "S", "text": "Implement a hash table using separate chaining."},
+       {"domain": "A", "text": "Practice writing readable, documented code for team use."}]},
+    {"week": 12, "topic": "Trees and Binary Search Trees", "description": "Tree terminology, traversals, and binary search tree operations.",
+     "lesson_outcomes": [
+       {"domain": "K", "text": "Define tree terminology and describe inorder, preorder, and postorder traversals."},
+       {"domain": "S", "text": "Implement a binary search tree with insert, search, and traversal operations."},
+       {"domain": "A", "text": "Demonstrate responsibility by testing code before submitting it."}]},
+    {"week": 13, "topic": "Balanced Trees and Heaps", "description": "AVL trees, rotations, and binary heaps.",
+     "lesson_outcomes": [
+       {"domain": "K", "text": "Explain why balancing keeps search tree operations efficient."},
+       {"domain": "S", "text": "Implement a binary min-heap and use it to build a priority queue."},
+       {"domain": "A", "text": "Show initiative in consulting documentation to resolve implementation issues."}]},
+    {"week": 14, "topic": "Graphs: Representation and Traversal", "description": "Adjacency lists and matrices, breadth-first and depth-first traversal.",
+     "lesson_outcomes": [
+       {"domain": "K", "text": "Compare adjacency list and adjacency matrix representations of a graph."},
+       {"domain": "S", "text": "Implement breadth-first and depth-first traversal on a graph."},
+       {"domain": "A", "text": "Collaborate effectively to model real-world networks as graphs."}]},
+    {"week": 15, "topic": "Shortest Path Algorithms", "description": "Dijkstra's algorithm and an introduction to minimum spanning trees.",
+     "lesson_outcomes": [
+       {"domain": "K", "text": "Explain how Dijkstra's algorithm finds shortest paths in weighted graphs."},
+       {"domain": "S", "text": "Implement Dijkstra's algorithm using a priority queue."},
+       {"domain": "A", "text": "Justify the choice of algorithm for a given network problem."}]},
+    {"week": 16, "topic": "Algorithm Design Paradigms", "description": "Greedy algorithms and an introduction to dynamic programming.",
+     "lesson_outcomes": [
+       {"domain": "K", "text": "Distinguish greedy algorithms from dynamic programming by their problem requirements."},
+       {"domain": "S", "text": "Solve the coin change problem using a dynamic programming approach."},
+       {"domain": "A", "text": "Demonstrate perseverance when decomposing problems into subproblems."}]},
+    {"week": 17, "topic": "Applied Problem Solving and Algorithm Selection", "description": "Selecting suitable data structures and algorithms for practical scenarios.",
+     "lesson_outcomes": [
+       {"domain": "K", "text": "Identify the data structure and algorithm best suited to a described scenario."},
+       {"domain": "S", "text": "Develop a program that combines at least two data structures to solve a practical problem."},
+       {"domain": "A", "text": "Practice ethical use of references and open-source code, with proper credit."}]},
+    {"week": 18, "topic": "Final Project Presentation and Examination", "description": "Project demonstrations and final assessment.",
+     "lesson_outcomes": [
+       {"domain": "K", "text": "Summarize the data structures and algorithms used in the final project."},
+       {"domain": "S", "text": "Demonstrate a working program and explain its time and space complexity."},
+       {"domain": "A", "text": "Accept feedback professionally and reflect on areas for improvement."}]}
+  ]
+}

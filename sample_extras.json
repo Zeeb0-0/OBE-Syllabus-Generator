@@ -1,0 +1,18 @@
+{
+  "pvm": [
+    {
+      "title": "SAMPLE PVM block (placeholder)",
+      "text": "SAMPLE DATA. Replace this with the institution's official text if the official template requires a PVM section."
+    }
+  ],
+  "grading_matrix": {
+    "title": "Grading System (SAMPLE DATA)",
+    "columns": ["Component", "Weight"],
+    "rows": [
+      ["Quizzes", "20%"],
+      ["Projects", "30%"],
+      ["Midterm Examination", "20%"],
+      ["Final Examination", "30%"]
+    ]
+  }
+}

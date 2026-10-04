@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% block title %}Generating - OBE Syllabus Generator{% endblock %}
+{% block content %}
+<section class="card">
+  <h1>{{ job.course_code }}</h1>
+  <p class="muted">
+    Mode: {{ 'live generation (local Ollama / Qwen)' if job.mode == 'live' else 'replay of a saved result (LLM bypassed)' }}
+  </p>
+
+  <ol class="stages" id="stages">
+    <li data-stage="init">Form checked, database ready</li>
+    <li data-stage="generate">{{ 'Qwen generating JSON (retries are automatic)' if job.mode == 'live' else 'Loading the saved JSON' }}</li>
+    <li data-stage="validated">Pydantic validation passed</li>
+    <li data-stage="saved">Saved to SQLite</li>
+  </ol>
+
+  <div id="status" class="status running">Running... <span id="elapsed">0</span> s</div>
+  <pre id="log" class="log"></pre>
+
+  <p id="actions" hidden>
+    <a id="open-link" class="button" href="#">Open outcomes and edit</a>
+    <a class="button secondary" href="{{ url_for('index') }}">Back to start</a>
+  </p>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script>
+const STAGES = ['init', 'generate', 'validated', 'saved'];
+const statusUrl = {{ url_for('job_status', job_id=job.id) | tojson }};
+const logEl = document.getElementById('log');
+const statusEl = document.getElementById('status');
+const actionsEl = document.getElementById('actions');
+const openLink = document.getElementById('open-link');
+
+async function poll() {
+  let finished = false;
+  try {
+    const response = await fetch(statusUrl, {cache: 'no-store'});
+    const d = await response.json();
+    logEl.textContent = d.log.join('\n');
+    logEl.scrollTop = logEl.scrollHeight;
+
+    const idx = d.status === 'done' ? STAGES.length - 1 : STAGES.indexOf(d.stage);
+    document.querySelectorAll('#stages li').forEach(li => {
+      const i = STAGES.indexOf(li.dataset.stage);
+      li.classList.toggle('on', i <= idx && (d.status !== 'error' || i < idx));
+      li.classList.toggle('current', d.status === 'running' && i === idx);
+    });
+
+    if (d.status === 'running') {
+      statusEl.className = 'status running';
+      statusEl.textContent = 'Running... ' + Math.round(d.elapsed) + ' s';
+    } else if (d.status === 'done') {
+      statusEl.className = 'status done';
+      statusEl.textContent = 'Done in ' + Math.round(d.elapsed) + ' s: validated and saved to SQLite.';
+      openLink.href = d.course_url;
+      actionsEl.hidden = false;
+      finished = true;
+    } else {
+      statusEl.className = 'status error';
+      statusEl.textContent = 'Failed. ' + d.error;
+      openLink.hidden = true;
+      actionsEl.hidden = false;
+      finished = true;
+    }
+  } catch (e) {
+    statusEl.textContent = 'Lost contact with the server. Is the app still running?';
+  }
+  if (!finished) setTimeout(poll, 1500);
+}
+poll();
+</script>
+{% endblock %}

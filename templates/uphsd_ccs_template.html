@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ course.course_code }} - {{ course.course_title }} | {{ config.document_title }}</title>
+<style>
+  :root { --ink:#1b1f24; --muted:#5b6470; --line:#c9ced6; --accent:#1f3a5f; }
+  * { box-sizing: border-box; }
+  body { font-family: "Segoe UI", Arial, sans-serif; color: var(--ink); margin: 0; background: #eef0f3; line-height: 1.45; }
+  .page { max-width: 900px; margin: 24px auto; background: #fff; padding: 32px 40px; border: 1px solid var(--line); }
+  h1 { font-size: 1.6rem; margin: 0 0 4px; color: var(--accent); }
+  h2 { font-size: 1.15rem; margin: 28px 0 8px; padding-bottom: 4px; border-bottom: 2px solid var(--accent); color: var(--accent); }
+  h3 { font-size: 1rem; margin: 14px 0 4px; }
+  p { margin: 6px 0; }
+  table { width: 100%; border-collapse: collapse; margin: 8px 0; }
+  th, td { border: 1px solid var(--line); padding: 6px 10px; vertical-align: top; text-align: left; }
+  th { background: #f1f4f8; }
+  table.info th { width: 28%; }
+  .muted { color: var(--muted); font-size: .92rem; margin: 2px 0 0; }
+  .institution { font-weight: 700; font-size: 1.05rem; margin: 0; }
+  .department { margin: 0 0 8px; }
+  .ksa { display: inline-block; min-width: 1.6em; text-align: center; font-weight: 700; font-size: .8rem; border: 1px solid currentColor; border-radius: 4px; padding: 0 4px; margin-right: 6px; }
+  .ksa-K { color: #1d4ed8; } .ksa-S { color: #047857; } .ksa-A { color: #b45309; }
+  ul.lo { list-style: none; margin: 0; padding: 0; }
+  ul.lo li { margin: 0 0 4px; }
+  td.week { width: 64px; text-align: center; font-weight: 700; }
+  .draft-banner { border: 2px dashed #b45309; background: #fff7ed; padding: 10px 14px; margin-bottom: 18px; font-size: .9rem; }
+  .draft-banner ul { margin: 6px 0 0 18px; padding: 0; }
+  .edited-flag { font-size: .7rem; color: #b45309; border: 1px solid #b45309; border-radius: 3px; padding: 0 4px; margin-left: 6px; }
+  footer { margin-top: 28px; font-size: .8rem; color: var(--muted); border-top: 1px solid var(--line); padding-top: 8px; }
+  @page { size: A4; margin: 16mm; }
+  @media print {
+    body { background: #fff; }
+    .page { border: none; margin: 0; max-width: none; padding: 0; }
+    tr { page-break-inside: avoid; }
+    h2 { page-break-after: avoid; }
+  }
+</style>
+</head>
+<body>
+{% macro badge(domain, label) -%}
+<span class="ksa ksa-{{ domain }}" title="{{ label }}">{{ domain }}</span>
+{%- endmacro %}
+<main class="page">
+
+{% if not config.template_is_official %}
+<aside class="draft-banner" role="note">
+  <strong>DRAFT LAYOUT - not the official CCS syllabus template.</strong>
+  The following are assumptions until the official template is supplied:
+  <ul>
+  {% for item in config.assumptions %}
+    <li>{{ item }}</li>
+  {% endfor %}
+  </ul>
+</aside>
+{% endif %}
+
+<header>
+  {% if config.institution_name %}<p class="institution">{{ config.institution_name }}</p>{% endif %}
+  {% if config.department_name %}<p class="department">{{ config.department_name }}</p>{% endif %}
+  <h1>{{ config.document_title }}</h1>
+  <p class="muted">{{ course.course_code }} &middot; {{ course.course_title }}</p>
+</header>
+
+<section id="course-info">
+  <h2>{{ labels.course_info }}</h2>
+  <table class="info">
+    <tr><th scope="row">Course Code</th><td>{{ course.course_code }}</td></tr>
+    <tr><th scope="row">Course Title</th><td>{{ course.course_title }}</td></tr>
+    <tr><th scope="row">Units</th><td>{{ course.units }}</td></tr>
+    <tr><th scope="row">Prerequisite</th><td>{{ course.prerequisite }}</td></tr>
+  </table>
+</section>
+
+<section id="description">
+  <h2>{{ labels.description }}</h2>
+  <p>{{ course.description }}</p>
+</section>
+
+{% if pvm %}
+<section id="pvm">
+  <h2>{{ labels.pvm }}</h2>
+  {% for block in pvm %}
+  <h3>{{ block.title }}</h3>
+  <p>{{ block.text }}</p>
+  {% endfor %}
+</section>
+{% endif %}
+
+<section id="outcomes">
+  <h2>{{ labels.outcomes }}</h2>
+  <table>
+    <thead>
+      <tr><th>No.</th><th>Domain</th><th>Course Learning Outcome</th></tr>
+    </thead>
+    <tbody>
+    {% for o in course_outcomes %}
+      <tr>
+        <td>CLO {{ o.number }}</td>
+        <td>{{ badge(o.domain, domain_labels[o.domain]) }}{{ domain_labels[o.domain] }}</td>
+        <td>{{ o.text }}{% if show_edit_markers and o.is_edited %}<span class="edited-flag">edited</span>{% endif %}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  <p class="muted">Domains:
+    {% for code, name in domain_labels.items() %}{{ code }} = {{ name }}{% if not loop.last %}; {% endif %}{% endfor %}
+  </p>
+</section>
+
+<section id="schedule">
+  <h2>{{ labels.schedule }}</h2>
+  <table>
+    <thead>
+      <tr><th>Week</th><th>Topic</th><th>Lesson Outcomes</th></tr>
+    </thead>
+    <tbody>
+    {% for w in weekly_schedule %}
+      <tr>
+        <td class="week">{{ w.week }}</td>
+        <td><strong>{{ w.topic }}</strong><p class="muted">{{ w.description }}</p></td>
+        <td>
+          <ul class="lo">
+          {% for lo in w.lesson_outcomes %}
+            <li>{{ badge(lo.domain, domain_labels[lo.domain]) }}{{ lo.text }}{% if show_edit_markers and lo.is_edited %}<span class="edited-flag">edited</span>{% endif %}</li>
+          {% endfor %}
+          </ul>
+        </td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</section>
+
+{% if grading_matrix %}
+<section id="grading">
+  <h2>{{ grading_matrix.title }}</h2>
+  <table>
+    <thead>
+      <tr>{% for col in grading_matrix.columns %}<th>{{ col }}</th>{% endfor %}</tr>
+    </thead>
+    <tbody>
+    {% for row in grading_matrix.rows %}
+      <tr>{% for cell in row %}<td>{{ cell }}</td>{% endfor %}</tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</section>
+{% endif %}
+
+<footer>
+  Generated {{ generated_at }} from the syllabus database.
+  {% if show_edit_markers %}{{ edited_count }} outcome(s) were edited by a human reviewer.{% endif %}
+</footer>
+
+</main>
+</body>
+</html>

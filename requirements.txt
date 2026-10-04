@@ -1,0 +1,4 @@
+pydantic>=2.0
+requests
+jinja2
+flask

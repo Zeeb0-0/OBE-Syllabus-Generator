@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% block title %}{{ course.course_code }} - OBE Syllabus Generator{% endblock %}
+{% block content %}
+<section class="card">
+  <h1>{{ course.course_code }} - {{ course.course_title }}</h1>
+  <p class="muted">{{ course.units }} units &middot; Prerequisite: {{ course.prerequisite }}</p>
+  <p>{{ course.description }}</p>
+
+  <div class="actions">
+    <form method="post" action="{{ url_for('export_course', course_id=course.id) }}" target="_blank" class="export-form">
+      <button type="submit">Export syllabus (HTML)</button>
+      <label class="inline"><input type="checkbox" name="mark_edits"> Mark edited outcomes</label>
+      {% if has_sample_extras %}
+      <label class="inline"><input type="checkbox" name="sample_extras"> Include SAMPLE PVM and grading matrix</label>
+      {% endif %}
+    </form>
+    <form method="post" action="{{ url_for('remove_course', course_id=course.id) }}"
+          onsubmit="return confirm('Delete this course and all its outcomes?');">
+      <button type="submit" class="danger">Delete course</button>
+    </form>
+  </div>
+  <p class="muted">The export opens in a new tab and is saved as <code>output/generated_syllabus.html</code>.
+    {{ edited_count }} outcome(s) edited so far.</p>
+</section>
+
+<section class="card">
+  <h2>Course Learning Outcomes</h2>
+  <p class="muted">K = Knowledge, S = Skills, A = Attitudes. Change the wording and press Save; it is stored in SQLite and used by the export.</p>
+  {% for o in outcomes %}
+  <form method="post" action="{{ url_for('edit_clo', course_id=course.id, outcome_id=o.id) }}" class="outcome" id="clo-{{ o.id }}">
+    <div class="meta">
+      <span class="badge badge-{{ o.domain }}">{{ o.domain }}</span> CLO {{ o.number }}
+      {% if o.is_edited %}<span class="edited">edited</span>{% endif %}
+    </div>
+    <textarea name="text" rows="2" required>{{ o.text }}</textarea>
+    <div class="row-actions">
+      <button type="submit" name="action" value="save">Save</button>
+      {% if o.is_edited %}<button type="submit" name="action" value="reset" class="secondary">Revert to AI wording</button>{% endif %}
+    </div>
+    {% if o.is_edited %}<p class="original">AI original: {{ o.original_text }}</p>{% endif %}
+  </form>
+  {% endfor %}
+</section>
+
+<section class="card">
+  <h2>Weekly Schedule ({{ weeks|length }} weeks)</h2>
+  {% for w in weeks %}
+  <details class="week">
+    <summary><strong>Week {{ w.week }}:</strong> {{ w.topic }}</summary>
+    <p class="muted">{{ w.description }}</p>
+    {% for lo in w.lesson_outcomes %}
+    <form method="post" action="{{ url_for('edit_lesson', course_id=course.id, lesson_id=lo.id) }}" class="outcome" id="lesson-{{ lo.id }}">
+      <div class="meta">
+        <span class="badge badge-{{ lo.domain }}">{{ lo.domain }}</span> Lesson outcome
+        {% if lo.is_edited %}<span class="edited">edited</span>{% endif %}
+      </div>
+      <textarea name="text" rows="2" required>{{ lo.text }}</textarea>
+      <div class="row-actions">
+        <button type="submit" name="action" value="save">Save</button>
+        {% if lo.is_edited %}<button type="submit" name="action" value="reset" class="secondary">Revert to AI wording</button>{% endif %}
+      </div>
+      {% if lo.is_edited %}<p class="original">AI original: {{ lo.original_text }}</p>{% endif %}
+    </form>
+    {% endfor %}
+  </details>
+  {% endfor %}
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script>
+(function () {
+  if (!location.hash) return;
+  try {
+    const el = document.querySelector(location.hash);
+    if (!el) return;
+    const d = el.closest('details');
+    if (d) d.open = true;                 // reopen the week that was just edited
+    el.scrollIntoView({block: 'center'});
+  } catch (e) { /* ignore bad hashes */ }
+})();
+</script>
+{% endblock %}

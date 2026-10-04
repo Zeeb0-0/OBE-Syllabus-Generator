@@ -1,0 +1,175 @@
+2026-10-03 02:18:41,342 INFO obe.db: Database ready at C:\Users\humph\OneDrive\Documents\Projects\School\BSCS\3rdYear\OBE-Syllabus-Generator\data\obe_syllabus.db
+2026-10-03 02:18:41,343 INFO obe.llm: Attempt 1/3 -> sending prompt to qwen2.5:3b
+2026-10-03 02:18:41,343 DEBUG obe.llm: Raw response (attempt 1): {
+  "course_outcomes": [
+    {
+      "number": 1,
+      "domain": "K",
+      "text": "Define the key components of an intelligent agent"
+    },
+    {
+      "number": 2,
+      "domain": "K",
+      "text": "Explain the difference between supervised and unsupervised learning"
+    },
+    {
+      "number": 3,
+      "domain": "K",
+      "text": "Compare and contrast various search algorithms used in AI"
+    },
+    {
+      "number": 4,
+      "domain": "K",
+      "text": "Identify and describe the role of machine learning in modern AI systems"
+    },
+    {
+      "number": 5,
+      "domain": "K",
+      "text": "Analyze the ethical implications of AI in decision-making processes"
+    },
+    {
+      "number": 6,
+      "domain": "K",
+      "text": "Construct a simple AI agent for a given problem"
+    }
+  ],
+  "weekly_schedule": [
+    {
+      "week": 1,
+      "topic": "Introduction to AI",
+      "description": "Overview of AI, intelligent agents, and basic concepts",
+      "lesson_outcomes": [
+        {
+          "domain": "K",
+          "text": "Define an intelligent agent and its components"
+        },
+        {
+          "domain": "S",
+          "text": "Apply the concept of search algorithms to solve problems"
+        },
+        {
+          "domain": "A",
+          "text": "Identify the importance of ethical considerations in AI"
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "topic": "Search Algorithms",
+      "description": "Introduction to search algorithms and their applications",
+      "lesson_outcomes": [
+        {
+          "domain": "K",
+          "text": "Define and explain search algorithms like breadth-first and depth-first"
+        },
+        {
+          "domain": "S",
+          "text": "Implement a basic search algorithm to solve a problem"
+        },
+        {
+          "domain": "A",
+          "text": "Discuss the importance of search algorithms in AI"
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "topic": "Knowledge Representation",
+      "desc
+2026-10-03 02:18:41,345 INFO obe.llm: Attempt 1 passed validation (0.0s)
+2026-10-03 02:18:41,352 INFO obe.db: Saved course 'SAMPLE-CS301' as id 2
+2026-10-03 02:18:41,353 INFO obe.main: Pipeline finished: course id 2, 1 attempt(s)
+2026-10-03 02:18:54,222 DEBUG obe.main: Pipeline ended with an error
+NoneType: None
+2026-10-03 02:19:08,339 INFO obe.db: Database ready at C:\Users\humph\OneDrive\Documents\Projects\School\BSCS\3rdYear\OBE-Syllabus-Generator\data\obe_syllabus.db
+2026-10-03 02:19:08,339 DEBUG obe.main: Pipeline ended with an error
+NoneType: None
+2026-10-03 02:19:14,934 INFO obe.db: Database ready at C:\Users\humph\OneDrive\Documents\Projects\School\BSCS\3rdYear\OBE-Syllabus-Generator\data\obe_syllabus.db
+2026-10-03 02:19:14,935 INFO obe.llm: Attempt 1/3 -> sending prompt to qwen2.5:3b
+2026-10-03 02:27:37,753 DEBUG obe.llm: Raw response (attempt 1): {
+  "course_outcomes": [
+    {"number": 1, "domain": "K", "text": "define the key terms and concepts of artificial intelligence"},
+    {"number": 2, "domain": "K", "text": "explain the relationship between machine learning and artificial intelligence"},
+    {"number": 3, "domain": "K", "text": "compare and contrast different types of intelligent agents"},
+    {"number": 4, "domain": "K", "text": "identify the components of a knowledge base in a knowledge-based system"},
+    {"number": 5, "domain": "S", "text": "implement a simple search algorithm to solve a problem"},
+    {"number": 6, "domain": "A", "text": "demonstrate ethical considerations in the development and use of AI systems"}
+  ],
+  "weekly_schedule": [
+    {
+      "week": 1,
+      "topic": "Introduction to AI",
+      "description": "Overview of AI, its history, and applications",
+      "lesson_outcomes": [
+        {"domain": "K", "text": "define key terms and concepts of artificial intelligence"},
+        {"domain": "S", "text": "implement a simple search algorithm to solve a problem"},
+        {"domain": "A", "text": "demonstrate ethical considerations in the development and use of AI systems"}
+      ]
+    },
+    {
+      "week": 2,
+      "topic": "Intelligent Agents",
+      "description": "Understanding the different types of intelligent agents",
+      "lesson_outcomes": [
+        {"domain": "K", "text": "define key terms and concepts of artificial intelligence"},
+        {"domain": "S", "text": "implement a simple search algorithm to solve a problem"},
+        {"domain": "A", "text": "demonstrate ethical considerations in the development and use of AI systems"}
+      ]
+    },
+    {
+      "week": 3,
+      "topic": "Search Algorithms",
+      "description": "Introduction to search algorithms and their applications",
+      "lesson_outcomes": [
+        {"domain": "K", "text": "define key terms and concepts of artificial intelligence"},
+        {"domain": "S", "text": "implement a simple search algorithm to s
+2026-10-03 02:27:37,767 INFO obe.llm: Attempt 1 passed validation (502.8s)
+2026-10-03 02:27:37,798 INFO obe.db: Saved course 'SAMPLE-CS301' as id 3
+2026-10-03 02:27:37,798 INFO obe.main: Pipeline finished: course id 3, 1 attempt(s)
+2026-10-03 07:53:35,112 INFO obe.db: Database ready at C:\Users\humph\OneDrive\Documents\Projects\School\BSCS\3rdYear\OBE-Syllabus-Generator\data\obe_syllabus.db
+2026-10-03 07:54:25,108 INFO obe.db: Database ready at C:\Users\humph\OneDrive\Documents\Projects\School\BSCS\3rdYear\OBE-Syllabus-Generator\data\obe_syllabus.db
+2026-10-03 09:21:42,345 INFO obe.db: Database ready at C:\Users\humph\OneDrive\Documents\Projects\School\BSCS\3rdYear\OBE-Syllabus-Generator\data\obe_syllabus.db
+2026-10-03 09:22:33,660 INFO obe.db: Database ready at C:\Users\humph\OneDrive\Documents\Projects\School\BSCS\3rdYear\OBE-Syllabus-Generator\data\obe_syllabus.db
+2026-10-03 09:22:33,663 INFO obe.llm: Attempt 1/3 -> sending prompt to qwen2.5:3b
+2026-10-03 09:26:28,722 DEBUG obe.llm: Raw response (attempt 1): {
+  "course_outcomes": [
+    {"number": 1, "domain": "K", "text": "define the purpose of object-oriented programming"},
+    {"number": 2, "domain": "K", "text": "explain the concept of encapsulation in object-oriented programming"},
+    {"number": 3, "domain": "K", "text": "compare and contrast different data structures used in programming"},
+    {"number": 4, "domain": "K", "text": "identify the key principles of software engineering"},
+    {"number": 5, "domain": "S", "text": "apply object-oriented design patterns to solve problems"},
+    {"number": 6, "domain": "S", "text": "implement a basic data structure in a programming language"}
+  ],
+  "weekly_schedule": [
+    {
+      "week": 1,
+      "topic": "Introduction to Programming",
+      "description": "Overview of programming concepts and basic syntax",
+      "lesson_outcomes": [
+        {"domain": "K", "text": "define the purpose of object-oriented programming"},
+        {"domain": "S", "text": "apply basic programming constructs to solve problems"},
+        {"domain": "A", "text": "demonstrate professionalism and responsibility in coding"}
+      ]
+    },
+    {
+      "week": 2,
+      "topic": "Variables and Data Types",
+      "description": "Understanding and using variables and data types in programming",
+      "lesson_outcomes": [
+        {"domain": "K", "text": "explain the concept of data types in programming"},
+        {"domain": "S", "text": "apply variable assignment and data type conversions"},
+        {"domain": "A", "text": "collaborate effectively in a team setting"}
+      ]
+    },
+    {
+      "week": 3,
+      "topic": "Control Structures",
+      "description": "Introduction to loops, conditionals, and decision-making in programming",
+      "lesson_outcomes": [
+        {"domain": "K", "text": "compare and contrast different control structures"},
+        {"domain": "S", "text": "implement loops and conditionals to control program flow"},
+        {"domain": "A", "text": "justify the use of control struct
+2026-10-03 09:26:28,739 INFO obe.llm: Attempt 1 passed validation (235.1s)
+2026-10-03 09:26:28,801 INFO obe.db: Saved course '67' as id 4
+2026-10-03 09:26:28,804 INFO obe.main: Pipeline finished: course id 4, 1 attempt(s)
+2026-10-03 10:37:56,262 INFO obe.db: Deleted course id 4 (and its related records)

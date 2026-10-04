@@ -1,0 +1,385 @@
+{
+  "course_outcomes": [
+    {
+      "number": 1,
+      "domain": "K",
+      "text": "Define the key components of an intelligent agent"
+    },
+    {
+      "number": 2,
+      "domain": "K",
+      "text": "Explain the difference between supervised and unsupervised learning"
+    },
+    {
+      "number": 3,
+      "domain": "K",
+      "text": "Compare and contrast various search algorithms used in AI"
+    },
+    {
+      "number": 4,
+      "domain": "K",
+      "text": "Identify and describe the role of machine learning in modern AI systems"
+    },
+    {
+      "number": 5,
+      "domain": "K",
+      "text": "Analyze the ethical implications of AI in decision-making processes"
+    },
+    {
+      "number": 6,
+      "domain": "K",
+      "text": "Construct a simple AI agent for a given problem"
+    }
+  ],
+  "weekly_schedule": [
+    {
+      "week": 1,
+      "topic": "Introduction to AI",
+      "description": "Overview of AI, intelligent agents, and basic concepts",
+      "lesson_outcomes": [
+        {
+          "domain": "K",
+          "text": "Define an intelligent agent and its components"
+        },
+        {
+          "domain": "S",
+          "text": "Apply the concept of search algorithms to solve problems"
+        },
+        {
+          "domain": "A",
+          "text": "Identify the importance of ethical considerations in AI"
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "topic": "Search Algorithms",
+      "description": "Introduction to search algorithms and their applications",
+      "lesson_outcomes": [
+        {
+          "domain": "K",
+          "text": "Define and explain search algorithms like breadth-first and depth-first"
+        },
+        {
+          "domain": "S",
+          "text": "Implement a basic search algorithm to solve a problem"
+        },
+        {
+          "domain": "A",
+          "text": "Discuss the importance of search algorithms in AI"
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "topic": "Knowledge Representation",
+      "description": "Understanding how to represent knowledge in AI systems",
+      "lesson_outcomes": [
+        {
+          "domain": "K",
+          "text": "Define the concept of knowledge representation in AI"
+        },
+        {
+          "domain": "S",
+          "text": "Build a simple knowledge base for a problem"
+        },
+        {
+          "domain": "A",
+          "text": "Evaluate the effectiveness of different knowledge representations"
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "topic": "Reasoning Under Uncertainty",
+      "description": "Exploring methods for reasoning in AI systems with incomplete information",
+      "lesson_outcomes": [
+        {
+          "domain": "K",
+          "text": "Define the concept of reasoning under uncertainty in AI"
+        },
+        {
+          "domain": "S",
+          "text": "Implement a probabilistic reasoning algorithm"
+        },
+        {
+          "domain": "A",
+          "text": "Discuss the impact of uncertainty on AI systems"
+        }
+      ]
+    },
+    {
+      "week": 5,
+      "topic": "Machine Learning",
+      "description": "Introduction to machine learning and its applications",
+      "lesson_outcomes": [
+        {
+          "domain": "K",
+          "text": "Define the key components of machine learning"
+        },
+        {
+          "domain": "S",
+          "text": "Apply machine learning techniques to a problem"
+        },
+        {
+          "domain": "A",
+          "text": "Evaluate the ethical implications of machine learning"
+        }
+      ]
+    },
+    {
+      "week": 6,
+      "topic": "Ethical Considerations in AI",
+      "description": "Exploring ethical considerations in AI and AI systems",
+      "lesson_outcomes": [
+        {
+          "domain": "K",
+          "text": "Define ethical considerations in AI systems"
+        },
+        {
+          "domain": "S",
+          "text": "Implement an ethical framework for AI systems"
+        },
+        {
+          "domain": "A",
+          "text": "Discuss the importance of ethical considerations in AI"
+        }
+      ]
+    },
+    {
+      "week": 7,
+      "topic": "Advanced Search Algorithms",
+      "description": "Exploring advanced search algorithms and their applications",
+      "lesson_outcomes": [
+        {
+          "domain": "K",
+          "text": "Define advanced search algorithms like A* and IDA*"
+        },
+        {
+          "domain": "S",
+          "text": "Implement and compare different search algorithms"
+        },
+        {
+          "domain": "A",
+          "text": "Discuss the limitations of search algorithms"
+        }
+      ]
+    },
+    {
+      "week": 8,
+      "topic": "Advanced Knowledge Representation",
+      "description": "Advanced techniques for representing knowledge in AI systems",
+      "lesson_outcomes": [
+        {
+          "domain": "K",
+          "text": "Define advanced knowledge representation techniques"
+        },
+        {
+          "domain": "S",
+          "text": "Build a complex knowledge base for a problem"
+        },
+        {
+          "domain": "A",
+          "text": "Evaluate the effectiveness of advanced knowledge representations"
+        }
+      ]
+    },
+    {
+      "week": 9,
+      "topic": "Advanced Reasoning Under Uncertainty",
+      "description": "Advanced methods for reasoning under uncertainty in AI systems",
+      "lesson_outcomes": [
+        {
+          "domain": "K",
+          "text": "Define advanced methods for reasoning under uncertainty"
+        },
+        {
+          "domain": "S",
+          "text": "Implement advanced probabilistic reasoning algorithms"
+        },
+        {
+          "domain": "A",
+          "text": "Discuss the impact of uncertainty in advanced AI systems"
+        }
+      ]
+    },
+    {
+      "week": 10,
+      "topic": "Advanced Machine Learning",
+      "description": "Advanced machine learning techniques and their applications",
+      "lesson_outcomes": [
+        {
+          "domain": "K",
+          "text": "Define advanced machine learning techniques"
+        },
+        {
+          "domain": "S",
+          "text": "Apply advanced machine learning techniques to a problem"
+        },
+        {
+          "domain": "A",
+          "text": "Evaluate the ethical implications of advanced machine learning"
+        }
+      ]
+    },
+    {
+      "week": 11,
+      "topic": "Advanced Ethical Considerations in AI",
+      "description": "Advanced ethical considerations in AI and AI systems",
+      "lesson_outcomes": [
+        {
+          "domain": "K",
+          "text": "Define advanced ethical considerations in AI systems"
+        },
+        {
+          "domain": "S",
+          "text": "Implement advanced ethical frameworks for AI systems"
+        },
+        {
+          "domain": "A",
+          "text": "Discuss the importance of advanced ethical considerations in AI"
+        }
+      ]
+    },
+    {
+      "week": 12,
+      "topic": "Project 1: AI Agent Development",
+      "description": "Develop a simple AI agent for a given problem",
+      "lesson_outcomes": [
+        {
+          "domain": "K",
+          "text": "Define the development process for an AI agent"
+        },
+        {
+          "domain": "S",
+          "text": "Implement a basic AI agent for a problem"
+        },
+        {
+          "domain": "A",
+          "text": "Evaluate the effectiveness of the AI agent"
+        }
+      ]
+    },
+    {
+      "week": 13,
+      "topic": "Review and Recap",
+      "description": "Review key concepts and prepare for final project",
+      "lesson_outcomes": [
+        {
+          "domain": "K",
+          "text": "Define key concepts covered in the course"
+        },
+        {
+          "domain": "S",
+          "text": "Apply key concepts to solve problems"
+        },
+        {
+          "domain": "A",
+          "text": "Discuss the importance of key concepts in AI"
+        }
+      ]
+    },
+    {
+      "week": 14,
+      "topic": "Final Project",
+      "description": "Develop a comprehensive AI system for a given problem",
+      "lesson_outcomes": [
+        {
+          "domain": "K",
+          "text": "Define the development process for a comprehensive AI system"
+        },
+        {
+          "domain": "S",
+          "text": "Implement a comprehensive AI system for a problem"
+        },
+        {
+          "domain": "A",
+          "text": "Evaluate the effectiveness of the comprehensive AI system"
+        }
+      ]
+    },
+    {
+      "week": 15,
+      "topic": "Final Project Presentations",
+      "description": "Present and discuss final projects",
+      "lesson_outcomes": [
+        {
+          "domain": "K",
+          "text": "Define the presentation process for final projects"
+        },
+        {
+          "domain": "S",
+          "text": "Present a comprehensive AI system for a problem"
+        },
+        {
+          "domain": "A",
+          "text": "Discuss the effectiveness of the AI system"
+        }
+      ]
+    },
+    {
+      "week": 16,
+      "topic": "Guest Speaker: Industry Expert",
+      "description": "Industry expert shares insights on AI in the real world",
+      "lesson_outcomes": [
+        {
+          "domain": "K",
+          "text": "Define the insights of an industry expert on AI"
+        },
+        {
+          "domain": "S",
+          "text": "Apply insights to solve problems"
+        },
+        {
+          "domain": "A",
+          "text": "Discuss the importance of industry insights in AI"
+        }
+      ]
+    },
+    {
+      "week": 17,
+      "topic": "Review and Recap",
+      "description": "Review key concepts and prepare for final exam",
+      "lesson_outcomes": [
+        {
+          "domain": "K",
+          "text": "Define key concepts covered in the course"
+        },
+        {
+          "domain": "S",
+          "text": "Apply key concepts to solve problems"
+        },
+        {
+          "domain": "A",
+          "text": "Discuss the importance of key concepts in AI"
+        }
+      ]
+    },
+    {
+      "week": 18,
+      "topic": "Final Exam",
+      "description": "Assess understanding of key concepts and skills",
+      "lesson_outcomes": [
+        {
+          "domain": "K",
+          "text": "Define key concepts covered in the course"
+        },
+        {
+          "domain": "S",
+          "text": "Apply key concepts to solve problems"
+        },
+        {
+          "domain": "A",
+          "text": "Discuss the importance of key concepts in AI"
+        }
+      ]
+    }
+  ],
+  "course": {
+    "course_code": "SAMPLE-CS301",
+    "course_title": "Artificial Intelligence (SAMPLE DATA)",
+    "description": "An introduction to the principles of artificial intelligence, covering intelligent agents, search, knowledge representation, reasoning under uncertainty, machine learning, and the ethical use of AI systems.",
+    "units": 3,
+    "prerequisite": "Data Structures and Algorithms"
+  }
+}
